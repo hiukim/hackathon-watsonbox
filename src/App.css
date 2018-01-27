@@ -1,28 +1,140 @@
-.App {
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+.app {
+  height: 100%;
+}
+
+.landing {
+  background-image: url('/images/landing.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.landing img.title {
+  width: 60%;
+  margin-top: 70%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.landing .footer { /* Increased specificity for SO snippet priority */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.landing .footer a {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.home {
+  font-size: 24px;
+  text-align: center;
+}
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header .left,.right {
+  margin: 8px;
+}
+.header .center {
+  flex: 1 1 auto;
+}
+.header .center img {
+  width: 50%;
 }
 
-.App-intro {
-  font-size: large;
+.box {
+  position: relative;
+  margin-bottom: 20px;
+  background: black;
+}
+.box img {
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+}
+.box .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px #000000;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.box-page .items {
+  margin: 10px;
+}
+.box-page .items hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: #fff;
+}
+
+.box-page .items .item {
+  display: flex;
+  flex-direction: row;
+}
+.box-page .items .item .img {
+  width: 200px;
+  border: solid 1px #555;
+}
+.box-page .items .item .img img {
+  flex: 0 0 auto;
+  width: 90px;
+  height: 90px;
+}
+.box-page .items .item .details {
+  padding-left: 20px;
+}
+.box-page .items .item .qty {
+  padding-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+.box-page .items .item .details .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.box-page .confirm { /* Increased specificity for SO snippet priority */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.box-page .confirm a { /* Increased specificity for SO snippet priority */
+  color: white;
+}
+.checkout-page {
+  text-align: center;
+}
+.checkout-page .title {
+  text-align: center;
+  font-size: 26px;
+  color: #555;
+}
+.checkout-page img.delivery {
+  width: 80%;
 }

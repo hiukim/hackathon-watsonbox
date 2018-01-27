@@ -1,12 +1,80 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Header from './Header.jsx';
+
+class Box extends Component {
+  renderItem() {
+    return (
+      <div className="item">
+        <img src="./images/products/item1.jpg"/>
+      </div>
+    )
+  }
+
+  render() {
+    return (
+      <div className="box">
+        <Link to='/box'>
+          <div className="title">Box 1</div>
+          <div className="items">
+            {this.renderItem()}
+            {this.renderItem()}
+            {this.renderItem()}
+          </div>
+        </Link>
+      </div>
+    )
+  }
+}
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h1>Home</h1>
-        <Link to='/list'>List</Link>
+      <div className="home">
+        <Header/>
+        
+        <div>
+          <img className="title" src="./images/box.png"/>
+          <p>Select your Box</p>
+        </div>
+
+        <div className="box">
+          <div className="title">Baby Box</div>
+          <Link to='/box'>
+            <img src="./images/box1.jpg"/>
+          </Link>
+        </div>
+        <div className="box">
+          <div className="title">Healthy Box</div>
+          <Link to='/box'>
+            <img src="./images/box2.png"/>
+          </Link>
+        </div>
+        <div className="box">
+          <div className="title">Beauty Box</div>
+          <Link to='/box'>
+            <img src="./images/box3.png"/>
+          </Link>
+        </div>
+
+        <div className="box">
+          <div className="title">Baby Box</div>
+          <Link to='/box'>
+            <img src="./images/box1.jpg"/>
+          </Link>
+        </div>
+        <div className="box">
+          <div className="title">Healthy Box</div>
+          <Link to='/box'>
+            <img src="./images/box2.png"/>
+          </Link>
+        </div>
+        <div className="box">
+          <div className="title">Beauty Box</div>
+          <Link to='/box'>
+            <img src="./images/box3.png"/>
+          </Link>
+        </div>
       </div>
     )
   }
