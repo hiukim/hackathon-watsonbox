@@ -90,7 +90,6 @@ body {
   flex-direction: row;
 }
 .box-page .items .item .img {
-  width: 200px;
   border: solid 1px #555;
 }
 .box-page .items .item .img img {
@@ -129,12 +128,37 @@ body {
 }
 .checkout-page {
   text-align: center;
-}
+} 
 .checkout-page .title {
   text-align: center;
   font-size: 26px;
   color: #555;
 }
+.checkout-page .title p {
+  line-height: 10px;
+}
 .checkout-page img.delivery {
+  margin-top: 40px;
   width: 80%;
+}
+.checkout-page .details { 
+  text-align: center;
+}
+.checkout-page .details .number { 
+  text-decoration: underline;
+  font-size: 20px;
+}
+.checkout-page .back { /* Increased specificity for SO snippet priority */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.checkout-page .back a {
+  color: white;
 }
