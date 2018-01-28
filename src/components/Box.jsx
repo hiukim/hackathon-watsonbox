@@ -29,14 +29,15 @@ class Box extends Component {
   render() {
     const items = [
       {image: '1.jpg', title: 'Bebelac Junior 3', desc: 'Bebelac Junior 3 Growing Up Formula 1-3 Years 400g', price: 200},
-      {image: '2.jpeg', title: 'Milupa Aptamil 3', desc: 'Milupa Aptamil 3 Growing-up Formula for Toddlers 400g', price: 30},
-      {image: '3.jpeg', title: 'Enfagrow A+3 400g', desc: 'Enfagrow A+ 3 Madu 1800 gram.', price: 80},
-      {image: '4.jpeg', title: 'Enfamil A+', desc: 'Enfamil A+ Ready to feed Iron Fortified Infant Formula', price: 50},
+      {image: '5.jpeg', title: 'Heineken (6 Pack Bottles)', desc: 'Milupa Aptamil 3 Growing-up Formula for Toddlers 400g', price: 30},
+      {image: '6.jpg', title: 'Pampers Swaddlers Newborn', desc: '240 Diapers', price: 80},
     ];
 
     return (
       <div className="box-page">
         <Header/>
+
+        <div className="box-title">Box 1 - Bi-weekly</div>
 
         <div className="items">
           <Item item={items[0]}/>
@@ -44,8 +45,6 @@ class Box extends Component {
           <Item item={items[1]}/>
           <hr/>
           <Item item={items[2]}/>
-          <hr/>
-          <Item item={items[3]}/>
         </div>
 
         <div className="confirm">

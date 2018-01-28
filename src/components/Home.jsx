@@ -39,38 +39,38 @@ class Home extends Component {
         </div>
 
         <div className="box">
-          <div className="title">Baby Box</div>
+          <div className="title">Box 1</div>
           <Link to='/box'>
             <img src="./images/box1.jpg"/>
           </Link>
         </div>
         <div className="box">
-          <div className="title">Healthy Box</div>
+          <div className="title">Box 2</div>
           <Link to='/box'>
             <img src="./images/box2.png"/>
           </Link>
         </div>
         <div className="box">
-          <div className="title">Beauty Box</div>
+          <div className="title">Box 3</div>
           <Link to='/box'>
             <img src="./images/box3.png"/>
           </Link>
         </div>
 
         <div className="box">
-          <div className="title">Baby Box</div>
+          <div className="title">Box 4</div>
           <Link to='/box'>
             <img src="./images/box1.jpg"/>
           </Link>
         </div>
         <div className="box">
-          <div className="title">Healthy Box</div>
+          <div className="title">Box 5</div>
           <Link to='/box'>
             <img src="./images/box2.png"/>
           </Link>
         </div>
         <div className="box">
-          <div className="title">Beauty Box</div>
+          <div className="title">Box 6</div>
           <Link to='/box'>
             <img src="./images/box3.png"/>
           </Link>
